@@ -7,6 +7,6 @@ import '~resources/scss/app.scss';
 import * as bootstrap from 'bootstrap';
 
 // Process all assets
-import.meta.glob([
-    '../img/**'
-]);
+// import.meta.glob([
+//     '../img/**'
+// ]);
