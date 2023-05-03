@@ -9,6 +9,10 @@
 
 {{-- Main --}}
 @section('page.main')
+    {{-- Jumbotron --}}
+    <div id="jumbotron"></div>
+    {{-- Jumbotron --}}
+    
     {{-- Comics --}}
     <section>
         <div id="main-top">

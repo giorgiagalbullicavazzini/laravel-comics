@@ -1,47 +1,59 @@
 header {
-    background-color: $main-color;
+    text-transform: uppercase;
 
     #top-header {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    #logo {
-        aspect-ratio: 1;
-        width: 5rem;
-    }
+        color: $main-color;
+        font-size: .875rem;
+        padding: .1875rem 0;
 
-    #navbar {
-        ul {
+        .container {
             align-items: center;
             display: flex;
-            text-transform: uppercase;
+            justify-content: flex-end;
+
+            * {
+                margin-left: 3.75rem;
+            }
+        }
+    }
+    
+    #bottom-header {
+        background-color: $main-color;
         
-            li {
-                margin-left: 1.875rem;
+        .container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            #logo {
+                aspect-ratio: 1;
+                width: 5rem;
+            }
         
-                a {
-                    border-bottom: $navbar-border solid transparent;
-                    color: $darken-color;
-                    display: inline-block;
-                    font-weight: 600;
-                    line-height: 7.5rem;
-        
-                    &.active,
-                    &:hover {
-                        border-bottom: $navbar-border solid $brand-color;
-                        color: $brand-color;
+            #navbar {
+                ul {
+                    align-items: center;
+                    display: flex;
+                
+                    li {
+                        margin-left: 1.875rem;
+                
+                        a {
+                            border-bottom: $navbar-border solid transparent;
+                            color: $darken-color;
+                            display: inline-block;
+                            font-weight: 600;
+                            line-height: 7.5rem;
+                
+                            &.active,
+                            &:hover {
+                                border-bottom: $navbar-border solid $brand-color;
+                                color: $brand-color;
+                            }
+                        }
                     }
                 }
             }
         }
-    }
-
-    #jumbotron {
-        background-image: url(../img/jumbotron.jpg);
-        background-size: cover;
-        height: 25rem;
-        width: 100%;
     }
 }
