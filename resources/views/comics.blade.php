@@ -37,7 +37,7 @@
             @foreach ($buy as $link)
                 <div class="button">
                     <div class="image">
-                        <img src="{{ $link['image'] }}" alt="{{ $link['text'] }}">
+                        <img src="{{ Vite::asset($link['image']) }}" alt="{{ $link['text'] }}">
                     </div>
                     <div class="text">
                         <a href="#">{{ $link['text'] }}</a>

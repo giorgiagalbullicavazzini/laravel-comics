@@ -3,22 +3,22 @@
 return [
     [
         "social" => "Facebook",
-        "image" => "footer-facebook.png",
+        "image" => "resources/img/footer-facebook.png",
     ],
     [
         "social" => "Twitter",
-        "image" => "footer-twitter.png",
+        "image" => "resources/img/footer-twitter.png",
     ],
     [
         "social" => "YouTube",
-        "image" => "footer-youtube.png",
+        "image" => "resources/img/footer-youtube.png",
     ],
     [
         "social" => "Pinterest",
-        "image" => "footer-pinterest.png",
+        "image" => "resources/img/footer-pinterest.png",
     ],
     [
         "social" => "Periscope",
-        "image" => "footer-periscope.png",
+        "image" => "resources/img/footer-periscope.png",
     ],
 ];

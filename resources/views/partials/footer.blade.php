@@ -58,7 +58,7 @@
                     @foreach ($socials as $social)
                     <div class="button">
                         <a href="#">
-                            <img src="{{ $social['image'] }}" alt="{{ $social['social'] }}">
+                            <img src="{{ Vite::asset($social['image']) }}" alt="{{ $social['social'] }}">
                         </a>
                     </div>
                     @endforeach
