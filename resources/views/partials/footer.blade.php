@@ -5,33 +5,66 @@
             <div class="left column">
                 <h3>DC Comics</h3>
                 <ul>
-                    {{-- @foreach ($navbar_comics as $pippo)
+                    @foreach ($navbar_comics as $link)
                     <li>
-                        <a href="{{ $pippo['href'] }}">{{ $pippo['item'] }}</a>
+                        <a href="{{ $link['href'] }}">{{ $link['item'] }}</a>
                     </li>
-                    @endforeach --}}
+                    @endforeach
                 </ul>
 
                 <h3>Shop</h3>
                 <ul>
-                    {{-- <li v-for="shop in shop"><a href="#">{{ shop }}</a></li> --}}
+                    @foreach ($navbar_shop as $link)
+                    <li>
+                        <a href="{{ $link['href'] }}">{{ $link['item'] }}</a>
+                    </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="center column">
                 <h3>DC</h3>
                 <ul>
-                    {{-- <li v-for="dc in dc"><a href="#">{{ dc }}</a></li> --}}
+                    @foreach ($navbar_dc as $link)
+                    <li>
+                        <a href="{{ $link['href'] }}">{{ $link['item'] }}</a>
+                    </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="right column">
                 <h3>Sites</h3>
                 <ul>
-                    {{-- <li v-for="site in sites"><a href="#">{{ site }}</a></li> --}}
+                    @foreach ($navbar_sites as $link)
+                    <li>
+                        <a href="{{ $link['href'] }}">{{ $link['item'] }}</a>
+                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
     </div>
     {{-- Footer Top --}}
 
-    {{-- <FooterBottom></FooterBottom> --}}
+    {{-- Footer Bottom --}}
+    <div id="footer-bottom">
+        <div class="container">
+            <a href="#">
+                <button>Sign-up now!</button>
+            </a>
+            
+            <div id="socials">
+                <h3>Follow us</h3>
+                <div class="buttons">
+                    @foreach ($socials as $social)
+                    <div class="button">
+                        <a href="#">
+                            <img src="{{ $social['image'] }}" alt="{{ $social['social'] }}">
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Footer Bottom --}}
 </footer>

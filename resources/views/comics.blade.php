@@ -32,20 +32,20 @@
     {{-- Comics --}}
 
     {{-- Buy --}}
-    {{-- <div id="main-bottom">
+    <div id="main-bottom">
         <div class="container">
-            @foreach ($comics as $comic)
+            @foreach ($buy as $link)
                 <div class="button">
                     <div class="image">
-                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                        <img src="{{ $link['image'] }}" alt="{{ $link['text'] }}">
                     </div>
                     <div class="text">
-                        <a href="#">{{ $comic['series'] }}</a>
+                        <a href="#">{{ $link['text'] }}</a>
                     </div>
                 </div>
             @endforeach
         </div>
-    </div> --}}
+    </div>
     {{-- Buy --}}
 @endsection
 {{-- Main --}}

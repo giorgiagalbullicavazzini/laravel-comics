@@ -26,24 +26,14 @@ use Illuminate\Support\Facades\Route;
 // Comics
 Route::get('/comics', function () {
 
-    $comics = [
-        'comics' => config('comics')
-    ];
-    $navbar = [
-        'navbar' => config('navbar')
-    ];
-    $navbar_comics = [
-        'navbar-comics' => config('navbar-comics')
-    ];
-    $navbar_dc = [
-        'navbar-dc' => config('navbar-dc')
-    ];
-    $navbar_shop = [
-        'navbar-shop' => config('navbar-shop')
-    ];
-    $navbar_sites = [
-        'navbar-sites' => config('navbar-sites')
-    ];
+    $buy = config('buy');
+    $comics = config('comics');
+    $navbar = config('navbar');
+    $navbar_comics = config('navbar-comics');
+    $navbar_dc = config('navbar-dc');
+    $navbar_shop = config('navbar-shop');
+    $navbar_sites = config('navbar-sites');
+    $socials = config('socials');
 
-    return view('comics', $comics, $navbar, $navbar_comics, $navbar_dc, $navbar_shop, $navbar_sites);
+    return view('comics', compact('buy', 'comics', 'navbar', 'navbar_comics', 'navbar_dc', 'navbar_shop', 'navbar_sites', 'socials'));
 }) -> name('comics');
