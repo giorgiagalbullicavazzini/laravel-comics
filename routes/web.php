@@ -15,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 // Homepage
 Route::get('/', function () {
-    return view('home');
+
+    $navbar = [
+        'navbar' => config('navbar')
+    ];
+
+    return view('home', $navbar);
 }) -> name('home');
 
 // Comics
@@ -24,6 +29,9 @@ Route::get('/comics', function () {
     $comics = [
         'comics' => config('comics')
     ];
+    $navbar = [
+        'navbar' => config('navbar')
+    ];
 
-    return view('comics', $comics);
+    return view('comics', $comics, $navbar);
 }) -> name('comics');

@@ -1,2 +1,11 @@
 // Import Bootstrap SCSS
 @import "~bootstrap/scss/bootstrap";
+
+// Import partials scss files
+@import 'partials/reset';
+@import 'partials/typography';
+@import 'partials/variables';
+
+// Import specific pages scss files
+@import 'partials/main';
+@import 'partials/header';

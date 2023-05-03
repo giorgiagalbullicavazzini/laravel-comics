@@ -1,0 +1,48 @@
+header {
+    background-color: $main-color;
+
+    #top-header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #logo {
+        aspect-ratio: 1;
+        width: 5rem;
+    }
+
+    #navbar {
+        ul {
+            align-items: center;
+            display: flex;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        
+            li {
+                margin-left: 1.875rem;
+        
+                a {
+                    border-bottom: $navbar-border solid transparent;
+                    color: $darken-color;
+                    display: inline-block;
+                    font-weight: 600;
+                    line-height: 7.5rem;
+        
+                    &.active,
+                    &:hover {
+                        border-bottom: $navbar-border solid $brand-color;
+                        color: $brand-color;
+                    }
+                }
+            }
+        }
+    }
+
+    #jumbotron {
+        background-image: url(../img/jumbotron.jpg);
+        background-size: cover;
+        height: 25rem;
+        width: 100%;
+    }
+}
