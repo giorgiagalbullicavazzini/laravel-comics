@@ -1,0 +1,48 @@
+#comic {
+    .container {
+        margin: auto;
+        max-width: 63.75rem;
+    
+        .divisor {
+            height: 5rem;
+            position: relative;
+        
+            #thumb {
+                border: 1px solid $main-color;
+                color: $main-color;
+                font-size: .875rem;
+                position: absolute;
+                text-transform: uppercase;
+                top: -14.0625rem;
+                width: 11.875rem;
+        
+                .label {
+                    background-color: $brand-color-light;
+                    padding: .0625rem .25rem;
+                    position: absolute;
+        
+                    &.type {
+                        left: 0;
+                        top: 0;
+                    }
+        
+                    &.gallery {
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .comic-info {
+        background-color: $main-color;
+    
+        h2 {
+            color: $brand-color-dark;
+            text-transform: uppercase;
+        }
+    }
+}
