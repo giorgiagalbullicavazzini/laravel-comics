@@ -1,0 +1,35 @@
+#main-top {
+    background-color: $darken-color;
+
+    .container {
+        color: $main-color;
+        font-weight: 600;
+        padding: 3.125rem 0;
+        text-transform: uppercase;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .comics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .comic {
+                margin: .625rem;
+                width: 11.875rem;
+
+                .image {
+                    aspect-ratio: 1;
+                    width: 100%;
+                }
+
+                h3 {
+                    font-size: .875rem;
+                }
+            }
+
+        }
+    }
+}

@@ -9,15 +9,28 @@
 
 {{-- Main --}}
 @section('page.main')
+    {{-- Comics --}}
     <section>
-        <div class="container">
-            <h2>Comics</h2>
-            <ul>
-                @foreach ($comics as $item)
-                    <li>{{ $item['title'] }}</li>
-                @endforeach
-            </ul>
+        <div id="main-top">
+            <div class="container">
+                <h2>Current Series</h2>
+                <div class="comics">
+                    @foreach ($comics as $comic)
+                        <div class="comic">
+                            <div class="image">
+                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                            </div>
+                            <h3>{{ $comic['series'] }}</h3>
+                        </div>
+                    @endforeach
+                </div>
+                <button>Load More</button>
+            </div>
         </div>
+        
     </section>
+    {{-- Comics --}}
+
+    {{-- <MainBottom></MainBottom> --}}
 @endsection
 {{-- Main --}}
