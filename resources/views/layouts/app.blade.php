@@ -13,17 +13,17 @@
 
 <body>
     {{-- Header --}}
-    @include('partials.header');
+    @include('partials.header')
     {{-- Header --}}
 
     {{-- Main --}}
     <main>
-        @yield('page.main');
+        @yield('page.main')
     </main>
     {{-- Main --}}
 
     {{-- Footer --}}
-    @include('partials.footer');
+    @include('partials.footer')
     {{-- Footer --}}
 </body>
 

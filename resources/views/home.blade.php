@@ -1,5 +1,5 @@
 {{-- Extend app layout --}}
-@extends('layouts.app');
+@extends('layouts.app')
 
 {{-- Title --}}
 @section('page.title')
