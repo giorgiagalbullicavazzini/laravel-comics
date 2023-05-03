@@ -47,6 +47,19 @@ Route::get('/comics', function () {
     return view('comics', compact('buy', 'comics'));
 }) -> name('comics');
 
+Route::get('/comic/{index}', function ($index) {
+
+    $total_comics = config('comics');
+
+    if($index > count($total_comics) - 1) {
+        abort(404);
+    }
+
+    $comic = $total_comics[$index];
+
+    return view('comic', compact('comic'));
+}) -> name('comic') -> where('index', '[0-9]+');
+
 // Fans
 Route::get('/fans', function () {
     return view('fans');

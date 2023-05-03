@@ -16,12 +16,7 @@
                 <h2>Current Series</h2>
                 <div class="comics">
                     @foreach ($comics as $comic)
-                        <div class="comic">
-                            <div class="image">
-                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
-                            </div>
-                            <h3>{{ $comic['series'] }}</h3>
-                        </div>
+                        @include('partials.comic-card')
                     @endforeach
                 </div>
                 <button>Load More</button>
