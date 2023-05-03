@@ -17,7 +17,9 @@
     <section>
         <div id="main-top">
             <div class="container">
-                <h2>Current Series</h2>
+                <div class="label">
+                    <h2>Current Series</h2>
+                </div>
                 <div class="comics">
                     @foreach ($comics as $comic)
                         @include('partials.comic-card')

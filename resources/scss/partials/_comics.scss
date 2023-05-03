@@ -12,12 +12,22 @@
         color: $main-color;
         font-weight: 600;
         padding: 3.125rem 0;
+        position: relative;
         text-transform: uppercase;
 
-        h2 {
-            font-size: 1.5rem;
-        }
+        .label {
+            background-color: $brand-color;
+            left: 0;
+            padding: .625rem 1.25rem;
+            position: absolute;
+            top: -1.5625rem;
 
+            h2 {
+                font-size: 1.875rem;
+                margin: 0;
+            }
+        }
+        
         .comics {
             display: flex;
             flex-wrap: wrap;
