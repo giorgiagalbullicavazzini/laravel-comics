@@ -31,6 +31,21 @@
     </section>
     {{-- Comics --}}
 
-    {{-- <MainBottom></MainBottom> --}}
+    {{-- Buy --}}
+    {{-- <div id="main-bottom">
+        <div class="container">
+            @foreach ($comics as $comic)
+                <div class="button">
+                    <div class="image">
+                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                    </div>
+                    <div class="text">
+                        <a href="#">{{ $comic['series'] }}</a>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div> --}}
+    {{-- Buy --}}
 @endsection
 {{-- Main --}}

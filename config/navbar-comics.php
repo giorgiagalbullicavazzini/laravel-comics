@@ -7,7 +7,7 @@ return [
     ],
     [
         "item" => "Comics",
-        "href" => "comics",
+        "href" => "#",
     ],
     [
         "item" => "Movies",
@@ -22,23 +22,11 @@ return [
         "href" => "#",
     ],
     [
-        "item" => "Collectibles",
-        "href" => "#",
-    ],
-    [
         "item" => "Videos",
         "href" => "#",
     ],
     [
-        "item" => "Fans",
-        "href" => "#",
-    ],
-    [
         "item" => "News",
-        "href" => "#",
-    ],
-    [
-        "item" => "Shop",
         "href" => "#",
     ],
 ];

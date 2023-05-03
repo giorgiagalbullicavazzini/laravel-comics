@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Homepage
-Route::get('/', function () {
+// Route::get('/', function () {
 
-    $navbar = [
-        'navbar' => config('navbar')
-    ];
+//      $navbar = [
+//          'navbar' => config('navbar')
+//      ];
 
-    return view('home', $navbar);
-}) -> name('home');
+//      return view('home', $navbar, $navbar_comics);
+//  }) -> name('home');
 
 // Comics
 Route::get('/comics', function () {
@@ -32,6 +32,18 @@ Route::get('/comics', function () {
     $navbar = [
         'navbar' => config('navbar')
     ];
+    $navbar_comics = [
+        'navbar-comics' => config('navbar-comics')
+    ];
+    $navbar_dc = [
+        'navbar-dc' => config('navbar-dc')
+    ];
+    $navbar_shop = [
+        'navbar-shop' => config('navbar-shop')
+    ];
+    $navbar_sites = [
+        'navbar-sites' => config('navbar-sites')
+    ];
 
-    return view('comics', $comics, $navbar);
+    return view('comics', $comics, $navbar, $navbar_comics, $navbar_dc, $navbar_shop, $navbar_sites);
 }) -> name('comics');

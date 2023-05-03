@@ -33,3 +33,38 @@
         }
     }
 }
+
+#main-bottom {
+    background-color: $brand-color;
+
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 3.125rem 0;
+
+        .button {
+            align-items: center;
+            display: flex;
+            margin: 0 1.5625rem;
+
+            .image {
+                margin-right: .625rem;
+                width: $shop-icons;
+
+                img {
+                    max-height: $shop-icons;
+                    object-fit: contain;
+                }
+            }
+
+            .text {
+                text-transform: uppercase;
+
+                a {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

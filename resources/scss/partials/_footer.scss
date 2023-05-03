@@ -1,0 +1,33 @@
+#footer-top {
+    background: url(../../assets/img/dc-logo-bg.png) center right 20% no-repeat, url(../../assets/img/footer-bg.jpg) left top no-repeat;
+    background-size: auto, cover;
+
+    .container {
+        display: flex;
+        padding: 1.875rem 0;
+
+        .column {
+            margin-right: 1.25rem;
+
+            h3 {
+                color: variables.$main-color;
+                text-transform: uppercase;
+            }
+
+            ul {
+                margin: .625rem 0;
+
+                li {
+                    font-size: .875rem;
+                    margin: .3125rem 0;
+
+                    a {
+                        color: variables.$darken-text-color;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
