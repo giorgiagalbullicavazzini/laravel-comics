@@ -13,27 +13,71 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
+|--------------------------------------------------------------------------
+| Same data to all views
+|--------------------------------------------------------------------------
+|
+| Data that are available on all different views are stored into
+| app\Providers\AppServiceProvider.php into boot method.
+|
+*/
+
 // Homepage
-// Route::get('/', function () {
+Route::get('/', function () {
+    return view('home');
+}) -> name('home');
 
-//      $navbar = [
-//          'navbar' => config('navbar')
-//      ];
-
-//      return view('home', $navbar, $navbar_comics);
-//  }) -> name('home');
+// Characters
+Route::get('/characters', function () {
+    return view('characters');
+}) -> name('characters');
 
 // Comics
 Route::get('/comics', function () {
 
     $buy = config('buy');
     $comics = config('comics');
-    $navbar = config('navbar');
-    $navbar_comics = config('navbar-comics');
-    $navbar_dc = config('navbar-dc');
-    $navbar_shop = config('navbar-shop');
-    $navbar_sites = config('navbar-sites');
-    $socials = config('socials');
 
-    return view('comics', compact('buy', 'comics', 'navbar', 'navbar_comics', 'navbar_dc', 'navbar_shop', 'navbar_sites', 'socials'));
+    return view('comics', compact('buy', 'comics'));
 }) -> name('comics');
+
+// Movies
+Route::get('/movies', function () {
+    return view('movies');
+}) -> name('movies');
+
+// TV
+Route::get('/tv', function () {
+    return view('tv');
+}) -> name('tv');
+
+// Games
+Route::get('/games', function () {
+    return view('games');
+}) -> name('games');
+
+// Collectibles
+Route::get('/collectibles', function () {
+    return view('collectibles');
+}) -> name('collectibles');
+
+// Videos
+Route::get('/videos', function () {
+    return view('videos');
+}) -> name('videos');
+
+// Fans
+Route::get('/fans', function () {
+    return view('fans');
+}) -> name('fans');
+
+// News
+Route::get('/news', function () {
+    return view('news');
+}) -> name('news');
+
+// Shop
+Route::get('/shop', function () {
+    return view('shop');
+}) -> name('shop');
