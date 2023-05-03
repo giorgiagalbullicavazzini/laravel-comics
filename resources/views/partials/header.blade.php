@@ -14,7 +14,7 @@
             <ul>
                 @foreach ($navbar as $link)
                 <li>
-                    <a href="{{ $link['href'] }}">{{ $link['item'] }}</a>
+                    <a href="{{ route($link['href']) }}">{{ $link['name'] }}</a>
                 </li>
                 @endforeach
             </ul>

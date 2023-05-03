@@ -2,43 +2,43 @@
 
 return [
     [
-        "item" => "Characters",
-        "href" => "#",
+        "name" => "Characters",
+        "href" => "characters",
     ],
     [
-        "item" => "Comics",
+        "name" => "Comics",
         "href" => "comics",
     ],
     [
-        "item" => "Movies",
-        "href" => "#",
+        "name" => "Movies",
+        "href" => "movies",
     ],
     [
-        "item" => "TV",
-        "href" => "#",
+        "name" => "TV",
+        "href" => "tv",
     ],
     [
-        "item" => "Games",
-        "href" => "#",
+        "name" => "Games",
+        "href" => "games",
     ],
     [
-        "item" => "Collectibles",
-        "href" => "#",
+        "name" => "Collectibles",
+        "href" => "collectibles",
     ],
     [
-        "item" => "Videos",
-        "href" => "#",
+        "name" => "Videos",
+        "href" => "videos",
     ],
     [
-        "item" => "Fans",
-        "href" => "#",
+        "name" => "Fans",
+        "href" => "fans",
     ],
     [
-        "item" => "News",
-        "href" => "#",
+        "name" => "News",
+        "href" => "news",
     ],
     [
-        "item" => "Shop",
-        "href" => "#",
+        "name" => "Shop",
+        "href" => "shop",
     ],
 ];
